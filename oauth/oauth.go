@@ -104,7 +104,7 @@ func getAccessToken(accessTokenId string) (*accessToken, rest_errors.RestErr) {
 	}
 
 	if response.StatusCode > 299 {
-		logger.Info("warum ein Error?")
+		logger.Info(response.String())
 		var restErr rest_errors.RestErr
 		var err error
 		if restErr, err = rest_errors.NewRestErrorFromBytes(response.Bytes()); err != nil {
