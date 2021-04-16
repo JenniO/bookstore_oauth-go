@@ -20,7 +20,7 @@ const (
 
 var (
 	oauthRestClient = rest.RequestBuilder{
-		BaseURL: "http://localhost:8085",
+		BaseURL: "http://localhost:8084",
 		Timeout: 200 * time.Millisecond,
 	}
 )
